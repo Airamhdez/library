@@ -1,0 +1,25 @@
+<h3>List of books</h3>
+<div ng-repeat="item in list">
+    <a href="/#/{{item.id}}">{{item.name}}</a>
+</div>
+
+<h3>New book</h3>
+<div>
+    <div>
+        <label for="name">Name:</label>
+        <input id="name" ng-model="form.name"/>
+    </div>
+    <div>
+        <label for="author">Author:</label>
+        <input id="author" ng-model="form.author"/>
+    </div>
+    <div>
+        <label for="year">Year:</label>
+        <input id="year" ng-model="form.year"/>
+    </div>
+    <div>
+        <label for="genre">Genre:</label>
+        <input id="genre" ng-model="form.genre"/>
+    </div>
+    <button ng-click="save()">Save</button>
+</div>

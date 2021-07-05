@@ -1,0 +1,24 @@
+<h3>Book detail</h3>
+
+<div>
+    <input type='hidden' id="id" ng-model="formDetail.id"/>
+    <div>
+        <label for="name">Name:</label>
+        <input id="name" ng-model="formDetail.name"/>
+    </div>
+    <div>
+        <label for="author">Author:</label>
+        <input id="author" ng-model="formDetail.author"/>
+    </div>
+    <div>
+        <label for="year">Year:</label>
+        <input id="year" ng-model="formDetail.year"/>
+    </div>
+    <div>
+        <label for="genre">Genre:</label>
+        <input id="genre" ng-model="formDetail.genre"/>
+    </div>
+    <button ng-click="save()">Save</button>
+    <button ng-click="delete()">Delete</button>
+    <br><a href="#/">Back</a>
+</div>
